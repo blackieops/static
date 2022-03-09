@@ -40,7 +40,7 @@ rather build your own container built on top of `static`.
 For example, to copy in your static web files, and a custom config:
 
 ```
-FROM blackieops/static:1.0.0
+FROM cr.b8s.dev/library/static:v1.0.0
 ADD config/static.yaml /config.yaml
 ADD public/ /www
 ```
