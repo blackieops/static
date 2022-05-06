@@ -17,7 +17,7 @@ reverse-proxying, CGI, load balancing, or an embedded Lua runtime...
 The intended deployment model is container-based.
 
 ```
-$ docker run --rm -p 8080:8080 -v /path/to/www:/www blackieops/static
+$ docker run --rm -p 8080:8080 -v /path/to/www:/www cr.b8s.dev/library/static:v1.0.0
 ```
 
 ## Configuration

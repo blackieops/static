@@ -11,5 +11,6 @@ VOLUME /www
 EXPOSE 8080
 COPY --from=0 /src/etc_passwd /etc/passwd
 COPY --from=0 /src/server /server
+COPY --from=0 /src/config.yaml.example /config.yaml
 USER nobody
 ENTRYPOINT ["/server"]
