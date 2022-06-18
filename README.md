@@ -17,7 +17,7 @@ reverse-proxying, CGI, load balancing, or an embedded Lua runtime...
 The intended deployment model is container-based.
 
 ```
-$ docker run --rm -p 8080:8080 -v /path/to/www:/www cr.b8s.dev/library/static:v1.1.0
+$ docker run --rm -p 8080:8080 -v /path/to/www:/www ghcr.io/blackieops/static
 ```
 
 ## Configuration
@@ -40,7 +40,7 @@ rather build your own container built on top of `static`.
 For example, to copy in your static web files, and a custom config:
 
 ```
-FROM cr.b8s.dev/library/static:v1.1.0
+FROM ghcr.io/blackieops/static
 ADD config/static.yaml /config.yaml
 ADD public/ /www
 ```
